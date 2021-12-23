@@ -16,6 +16,19 @@ async function getapi(my_page_id) {
     //     hideloader();
     // }
 }
+
+async function create_checkout_session(my_page_id) {
+    const api_url = `https://pludo.app/doost/create-checkout-session?link_id=${my_page_id}`;
+    // Storing response
+    fetch(api_url, {
+        headers: { 'Content-Type': 'application/json' }
+    })
+    .then(response => response.json())
+    .then(data => {
+        return data
+    })
+}
+
 // Calling that async function
 my_page_id = window.location.href.split("?id=")[1].replace("#", "")
 var slideIndex = 1;
@@ -82,5 +95,5 @@ function show(data) {
 // Get the button that opens the modal
 var buy_btn = document.getElementById("buy-btn");
 buy_btn.onclick = function() {
-    
+    create_checkout_session(my_page_id)
 }
