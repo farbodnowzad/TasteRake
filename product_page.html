@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>goop Elves</title>
+    <link rel="icon" type="image/x-icon" href="https://assets.goop-img.com/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="index.html"><img class="banner" src="banner.png"></img></a>
+    <div class="container">
+        <div id="phoneNumberModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br>
+            <p class="modal-title">Enter your phone number below. You will receive a uniquely generated link that you can share.</p><br>
+            <br>
+            <input type="number" id="number-input" placeholder="Enter phone number"/>
+            <br>
+            <input type="submit" id="submit-btn"/>
+            <br>
+        </div>
+        
+        </div>
+        <div class="row">
+                <div class="col-2"><a class="prev" onclick="plusSlides(-1)"><div class='button-col'>&#10094;</div></a></div>
+                <div class="col-8 product-container">
+                    <br>
+                    <div class="slideshow-container" id="slideshow-container"></div>
+                    <br>
+                    <div class="product-description" id="product-description"></div>
+                </div>
+                <div class="col-2"><a class="next" onclick="plusSlides(1)"><div class='button-col'>&#10095;</div></a></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2 you-earn" id="you-earn"></div>
+            <div class="col-6"><span class="earn-per-sale-text">YOU EARN PER SALE</span></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col share-this">
+                <a href="#"><div id="share-this-btn">SHARE THIS</div></a>
+            </div>
+            <div class="col"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 product-container">
+                <div class="product-details" id="product-details"></div>
+                <br>
+                <a id="view-on-goop">View on goop.com</a>
+            </div>
+            <div class="col-2"></div>
+    </div>
+    <br>
+    <br>
+    </div>
+    <script src="product_page.js"></script>
+</body>
+
+</html>

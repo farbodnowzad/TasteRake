@@ -1,0 +1,289 @@
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+a {
+    color: black;
+    /* width: 100%; */
+}
+a:hover {
+    text-decoration: none;
+}
+/* div {
+    border: 1px solid black;
+} */
+.item-container {
+    text-align: center;
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+}
+.subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+    width: 70%;
+}
+.item-footer {
+    width: 100%;
+}
+.item-description {
+    text-align: left;
+    width: 100%;
+    color: black;
+}
+.item-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    color: black;
+    font-weight: 600;
+}
+.product-container {
+    text-align: center;
+    /* width: 100%; */
+}
+.img-container-product img{
+    width: 50%;
+}
+.product-descrition {
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+.product-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    color: black;
+    font-weight: 600;
+}
+.product-details {
+    text-align: left;
+}
+.share-this {
+    background-color: #1D74F7;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.share-this a{
+    color: white;
+}
+
+.buy {
+  background-color: #1D74F7;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.buy a{
+  color: white;
+}
+
+.buy:hover {
+  background-color: #418bfa;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.you-earn {
+    background-color: #1ABA6D;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.earn-per-sale-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product-details-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.share-this:hover {
+    background-color: #418bfa;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+s {
+    color: grey;
+}
+
+.discount {
+  color: #1D74F7;
+}​
+
+#view-on-goop {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.slideshow-container {
+    /* max-width: 1000px; */
+    width: 100%;
+    /* position: relative;
+    margin: auto; */
+  }
+  
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.button-col {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.button-col:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  /* padding: 16px; */
+  color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  height: 100%;
+  vertical-align: middle;
+  /* line-height: 500px; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fading {
+  -webkit-animation-name: fading;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fading;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fading {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fading {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+.modal-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
