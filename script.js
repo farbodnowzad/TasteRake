@@ -1,6 +1,6 @@
 
 // api url
-const api_url = "http://127.0.0.1:5000/doost/products";
+const api_url = "https://pludo.app/doost/products";
   
 // Defining async function
 async function getapi(url) {

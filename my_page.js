@@ -1,5 +1,5 @@
 async function getapi(my_page_id) {
-    const api_url = `http://127.0.0.1:5000/doost/my_page?id=${my_page_id}`;
+    const api_url = `https://pludo.app/doost/my_page?id=${my_page_id}`;
     // Storing response
     fetch(api_url, {
         headers: { 'Content-Type': 'application/json' }

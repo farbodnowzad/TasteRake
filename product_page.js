@@ -1,7 +1,7 @@
 // Defining async function
 async function getapi(product_id) {
     // api url
-    const api_url = `http://127.0.0.1:5000/doost/product?id=${product_id}`;
+    const api_url = `https://pludo.app/doost/product?id=${product_id}`;
     // Storing response
     fetch(api_url, {
         headers: { 'Content-Type': 'application/json' }
