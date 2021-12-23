@@ -26,7 +26,7 @@ getapi(product_id);
 function submitNumber() {
     phone_number = document.getElementById('number-input').value
 
-    const api_url = `http://127.0.0.1:5000/doost/link`;
+    const api_url = `https://pludo.app/doost/link`;
     const data = {
         'product_id' : product_id,
         'phone_number' : phone_number,
