@@ -222,6 +222,27 @@ s {
   text-align: center;
 }
 
+#number-input{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  height: 5vh;
+  text-align: center;
+}
+
+#submit-btn {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  height: 5vh;
+}
+
+.modal-logo {
+  text-align: center;
+}
+
+.modal-logo img {
+  width: 25%;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -283,7 +304,7 @@ s {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 5px solid black;
   width: 25%; /* Could be more or less, depending on screen size */
 }
 
