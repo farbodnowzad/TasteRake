@@ -268,6 +268,17 @@ s {
   width: 25%; /* Could be more or less, depending on screen size */
 }
 
+/* Modal Content/Box */
+@media screen and (max-width: 800px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%; /* Could be more or less, depending on screen size */
+  }
+}
+
 .modal-title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
