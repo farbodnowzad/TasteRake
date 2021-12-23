@@ -122,9 +122,14 @@ btn.onclick = function() {
 }
 
 var submit_btn = document.getElementById("submit-btn");
+var number_input = document.getElementById("number-input");
+var modal_title = document.getElementById("modal-title");
 submit_btn.onclick = function() {
     submitNumber();
-    modal.style.display = "none";
+    submit_btn.style.display = "none";
+    number_input.style.display = "none";
+    modal_title.innerHTML = "Success! Check your phone for a text.";
+    modal_title.style.textAlign = "center";
 }
 
 // When the user clicks on <span> (x), close the modal
