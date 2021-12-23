@@ -156,6 +156,22 @@ s {
   width: 100%;
 }
 
+.left-col {
+  text-align: center;
+}
+
+.left-col:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.right-col {
+  text-align: center;
+}
+
+.right-col:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
 .button-col {
   height: 100%;
   width: 100%;
@@ -176,8 +192,11 @@ s {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  height: 100%;
-  vertical-align: middle;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   /* line-height: 500px; */
 }
 
