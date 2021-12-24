@@ -32,25 +32,28 @@ function show(data) {
     
     // Loop to access all rows 
     for (let r of results) {
+        total_usd = r.price.split(" $")[1]
+        reduced_price = (total_usd * 0.90).toFixed(2)
+
         row += `<div class="col-6 item-container">
-                    <a href="product_page.html?product_id=${r._id}&link_id=${link_id}" class="item-link">
-                    <div class="img-container">
-                        <img
-                            src=${r.primary_image}></img>
+                <a href="my_product_page.html?product_id=${r._id}&link_id=${link_id}" class="item-link">
+                <div class="img-container">
+                    <img
+                        src=${r.primary_image}></img>
+                </div>
+                <div class="item-footer">
+                    <div class="item-description">
+                        ${r.brand}<br>
+                        <span class="item-title">${r.title}</span><br>
+                        US $${reduced_price} <s>${r.price}</s>
                     </div>
-                    <div class="item-footer">
-                        <div class="item-description">
-                            ${r.brand}<br>
-                            <span class="item-title">${r.title}</span><br>
-                            ${r.price}
-                        </div>
-                    </div>
-                </a>
-            </div>`;
+                </div>
+            </a>
+        </div>`;
     }
     // Setting innerHTML as tab variable
     document.getElementById("product_results").innerHTML = row;
-    if (!page_title) {
+    if (page_title) {
         document.getElementById("page-title-user-name").innerHTML = page_title;
     }
 }
