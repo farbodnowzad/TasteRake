@@ -31,6 +31,9 @@ function show(data) {
     
     // Loop to access all rows 
     for (let r of results) {
+        total_usd = r.price.split(" $")[1]
+        reduced_price = (total_usd * 0.90).toFixed(2)
+
         row += `<div class="col-6 item-container">
                     <a href="product_page.html?product_id=${r._id}" class="item-link">
                     <div class="img-container">
@@ -41,7 +44,7 @@ function show(data) {
                         <div class="item-description">
                             ${r.brand}<br>
                             <span class="item-title">${r.title}</span><br>
-                            ${r.price}
+                            US $${reduced_price} <s>${r.price}</s>
                         </div>
                     </div>
                 </a>

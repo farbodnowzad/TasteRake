@@ -98,6 +98,7 @@ function show(data) {
     url = item.url;
     // Setting innerHTML as tab variable
     document.getElementById("banner-link").href = `my_index.html?link_id=${link_id}`
+    document.getElementById("nav-home-link").href = `my_index.html?link_id=${link_id}`
     document.getElementById("slideshow-container").innerHTML = slideshow;
     document.getElementById("product-description").innerHTML = info;
     document.getElementById("product-details").innerHTML = product_details;
