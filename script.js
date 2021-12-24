@@ -60,7 +60,6 @@ function submitNumber() {
 
     const api_url = `https://pludo.app/doost/link`;
     const data = {
-        'product_id' : product_id,
         'phone_number' : phone_number,
         'name' : user_name,
     };
