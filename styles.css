@@ -125,10 +125,6 @@ img {
 
 .buy:hover {
   background-color: #418bfa;
-  color: white;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -388,6 +384,16 @@ s {
     vertical-align: middle;
   }
   .share-this {
+    background-color: #1D74F7;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+  }
+
+  .buy {
     background-color: #1D74F7;
     color: white;
     padding-top: 3%;
