@@ -16,7 +16,7 @@ async function getapi(link_id) {
     // }
 }
 // Calling that async function
-link_id = window.location.href.split("?id=")[1].replace("#", "")
+link_id = window.location.href.split("?link_id=")[1].replace("#", "")
 getapi(link_id);
 // Calling that async function
   
