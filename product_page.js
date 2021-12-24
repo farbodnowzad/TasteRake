@@ -85,7 +85,7 @@ function show(data) {
                 </div>`;
     }
 
-    total_usd = item.price.split(" $")[1]
+    total_usd = item.price.split(" $")[1].replace(",", "")
     reduced_price = (total_usd * 0.90).toFixed(2)
 
     info = `${item.brand}<br>

@@ -31,7 +31,7 @@ function show(data) {
     
     // Loop to access all rows 
     for (let r of results) {
-        total_usd = r.price.split(" $")[1]
+        total_usd = r.price.split(" $")[1].replace(",", "")
         reduced_price = (total_usd * 0.90).toFixed(2)
 
         row += `<div class="col-6 item-container">
