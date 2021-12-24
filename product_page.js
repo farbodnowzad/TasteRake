@@ -1,7 +1,7 @@
 // Defining async function
 async function getapi(product_id) {
     // api url
-    const api_url = `https://pludo.app/doost/product?id=${product_id}`;
+    const api_url = `https://pludo.app/doost/product?product_id=${product_id}`;
     // Storing response
     fetch(api_url, {
         headers: { 'Content-Type': 'application/json' }
@@ -19,17 +19,19 @@ async function getapi(product_id) {
     // }
 }
 // Calling that async function
-product_id = window.location.href.split("?id=")[1].replace("#", "")
+product_id = window.location.href.split("?product_id=")[1].replace("#", "")
 var slideIndex = 1;
 getapi(product_id);
 
 function submitNumber() {
     phone_number = document.getElementById('number-input').value
+    user_name = document.getElementById('name-input').value
 
     const api_url = `https://pludo.app/doost/link`;
     const data = {
         'product_id' : product_id,
         'phone_number' : phone_number,
+        'name' : user_name,
     };
     const other_params = {
         headers: {
@@ -71,7 +73,7 @@ function showSlides(n) {
 }
   
 function show(data) {
-    item = data.response
+    item = data.product
     let slideshow = ``;
     
     // Loop to access all rows 
@@ -128,6 +130,7 @@ submit_btn.onclick = function() {
     submitNumber();
     submit_btn.style.display = "none";
     number_input.style.display = "none";
+    name_input.style.display = "none";
     modal_title.innerHTML = "Success! Check your phone for a text.";
     modal_title.style.textAlign = "center";
 }

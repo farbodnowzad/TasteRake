@@ -241,7 +241,7 @@ s {
   text-align: center;
 }
 
-#number-input{
+.modal-input{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
   height: 5vh;

@@ -42,23 +42,6 @@
 <body>
     <a href="index.html"><img class="banner" src="banner.png"></img></a>
     <div class="container">
-        <div id="phoneNumberModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <br>
-                <div class="modal-logo"><img src="TasteRake_small.png"/></div>
-                <br>
-                <p class="modal-title" id="modal-title">Enter your name and phone number below. We'll send you a text with your unique link.</p>
-                <br>
-                <input type="text" class="modal-input" id="name-input" placeholder="First Name" pattern="[0-9]*"/>
-                <br>
-                <input type="number" class="modal-input" id="number-input" placeholder="Phone number" pattern="[0-9]*"/>
-                <br>
-                <input type="submit" id="submit-btn"/>
-                <br>
-            </div>
-        </div>
         <div class="row navigation">
             <div class="col-2" id="nav-wrapper">
                 <a href="index.html" class="nav-home"><span class="nav-btn">Home</span></a><a href="mailto:info@pludo.xyz"><span class="nav-btn">Contact</span></a>
@@ -67,18 +50,8 @@
         </div>
         <div class="subtitle">
             <br>
-            <h4>Make Money by Sharing these Products</h4>
-            Turn your recommendations into cash. Generate your own, unique link for this page to share with your friends and social media. You'll get a 10% comission whenever someone buys a product through your link.
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-1 col-sm"></div>
-                <div class="col-10 col-sm share-this">
-                    <a><div id="share-this-btn">SHARE THESE PRODUCTS</div></a>
-                </div>
-                <div class="col-1 col-sm"></div>
-            </div>
-            <br>
+            <h4 id='page-title-user-name'></h4>
+            Celebrate the New Year with discounts on all of these featured products. Get 10% off everything! 
             <br>
             <div class="row"  id="product_results">
             </div>
@@ -96,5 +69,5 @@
     </div>
     <!-- copyright -->
   </footer>
-<script src="script.js"></script>
+<script src="my_index.js"></script>
 </html>
