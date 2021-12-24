@@ -125,6 +125,7 @@ btn.onclick = function() {
 
 var submit_btn = document.getElementById("submit-btn");
 var number_input = document.getElementById("number-input");
+var name_input = document.getElementById("name-input");
 var modal_title = document.getElementById("modal-title");
 submit_btn.onclick = function() {
     submitNumber();
