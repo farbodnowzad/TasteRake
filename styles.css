@@ -305,6 +305,15 @@ s {
   to {opacity: 1}
 }
 
+#page-title-user-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+#page-title-break{
+  display: none;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */

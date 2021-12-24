@@ -103,8 +103,9 @@ function show(data) {
     document.getElementById("product-description").innerHTML = info;
     document.getElementById("product-details").innerHTML = product_details;
     document.getElementById("view-on-goop").href = url;
-    if (!page_title) {
+    if (page_title) {
         document.getElementById("page-title-user-name").innerHTML = page_title;
+        document.getElementById("page-title-break").style.display = "block";
     }
 }
 
