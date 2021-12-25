@@ -18,14 +18,18 @@ async function getapi(product_id, link_id) {
 }
 
 async function create_checkout_session(link_id) {
-    const api_url = `https://pludo.app/doost/create-checkout-session?link_id=${link_id}`;
+    // loader = document.getElementById("loader")
+    // loader_br = document.getElementById("loader-br")
+    // loader.style.display = "block";
+    // loader_br.style.display = "block"
+    const api_url = `https://pludo.app/doost/create-checkout-session?link_id=${link_id}&product_id=${product_id}`;
     // Storing response
     fetch(api_url, {
         headers: { 'Content-Type': 'application/json' }
     })
     .then(response => response.json())
     .then(data => {
-        return data
+        location.href = data.url
     })
 }
 
@@ -105,7 +109,6 @@ function show(data) {
     document.getElementById("view-on-goop").href = url;
     if (page_title) {
         document.getElementById("page-title-user-name").innerHTML = page_title;
-        document.getElementById("page-title-break").style.display = "block";
     }
 }
 

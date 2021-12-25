@@ -306,10 +306,6 @@ s {
   font-weight: 600;
 }
 
-#page-title-break{
-  display: none;
-}
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
