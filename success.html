@@ -1,11 +1,73 @@
-<html>
-  <head><title>Thanks for your order!</title></head>
-  <body>
-    <h1>Thanks for your order!</h1>
-    <p>
-      We appreciate your business!
-      If you have any questions, please email
-      <a href="mailto:info@pludo.xyz">info@pludo.xyz</a>.
-    </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript">
+    (function(e,t){var r=e.amplitude||{_q:[],_iq:{}};var n=t.createElement("script")
+    ;n.type="text/javascript"
+    ;n.integrity="sha384-4rr7CTymHc64YjTTL6O3ktfsHYI1yJnQdmKv4zFoe+frjXb05MfzzuLLIAgJ/XHs"
+    ;n.crossOrigin="anonymous";n.async=true
+    ;n.src="https://cdn.amplitude.com/libs/amplitude-8.11.0-min.gz.js"
+    ;n.onload=function(){if(!e.amplitude.runQueuedFunctions){
+    console.log("[Amplitude] Error: could not load SDK")}}
+    ;var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(n,s)
+    ;function i(e,t){e.prototype[t]=function(){
+    this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+    var o=function(){this._q=[];return this}
+    ;var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"]
+    ;for(var c=0;c<a.length;c++){i(o,a[c])}r.Identify=o;var u=function(){this._q=[]
+    ;return this}
+    ;var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+    ;for(var l=0;l<p.length;l++){i(u,p[l])}r.Revenue=u
+    ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId","setLibrary","setTransport"]
+    ;function v(e){function t(t){e[t]=function(){
+    e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+    for(var r=0;r<d.length;r++){t(d[r])}}v(r);r.getInstance=function(e){
+    e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+    ;if(!Object.prototype.hasOwnProperty.call(r._iq,e)){r._iq[e]={_q:[]};v(r._iq[e])
+    }return r._iq[e]};e.amplitude=r})(window,document);
+    
+    amplitude.getInstance().init("d25e00fa2a9541fc60f28e527e245f82");
+    amplitude.getInstance().logEvent('visit_home');
+</script>
+<head>
+    <title>TasteRake: Earn when you share</title>
+    <link rel="icon" type="image/x-icon" href="TasteRake_small.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <a href="index.html"><img class="banner" src="banner.png"></img></a>
+    <div class="container">
+        <div class="row navigation">
+            <div class="col-2" id="nav-wrapper">
+                <a href="index.html" class="nav-home"><span class="nav-btn">Home</span></a><a href="mailto:info@pludo.xyz"><span class="nav-btn">Contact</span></a>
+            </div>
+            <div class="col-10"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1 col-sm-2"></div>
+            <div class="col-10 col-sm-8 success-message">Thank you for your purchase! You will receive an email shortly regarding your order status.
+              <br><br>
+              Please reach out to info@pludo.xyz with any questions.</div>
+            <div class="col-1 col-sm-2"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- copyright -->
+    <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
+      © 2021 copyright 
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
+    </div>
+    <!-- copyright -->
+  </footer>
+<script src="script.js"></script>
 </html>

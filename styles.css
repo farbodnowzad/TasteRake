@@ -306,6 +306,12 @@ s {
   font-weight: 600;
 }
 
+.success-message {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -403,4 +409,10 @@ s {
 #view-on-goop {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
