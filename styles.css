@@ -411,7 +411,7 @@ s {
   font-weight: 600;
 }
 
-footer {
+.success-footer {
   bottom: 0;
   position: absolute;
   width: 100%;
