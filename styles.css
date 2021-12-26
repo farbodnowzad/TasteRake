@@ -416,7 +416,10 @@ s {
   h3, h4 {
     font-family: JosefinSans;
     font-size: 16px;
-}
+  }
+  .banner {
+    content: url('banner_mobile.svg');
+  }
 }
 
 #view-on-goop {
