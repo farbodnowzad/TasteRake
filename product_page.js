@@ -90,7 +90,7 @@ function show(data) {
 
     info = `${item.brand}<br>
     <span class="product-title">${item.title}</span><br>
-    US $${reduced_price} <s>${item.price}</s> <span class="discount">10% Off Exclusive</span>`
+    US $${reduced_price} <s>${item.price}</s> `
     
     earnings = (reduced_price * 0.10).toFixed(2)
     earnings = 'US $' + earnings
