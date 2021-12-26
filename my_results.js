@@ -1,7 +1,7 @@
 // Defining async function
-async function getapi(link_id) {
+async function getapi(link_id, category) {
     // api url
-    const url = `https://pludo.app/doost/my_results?link_id=${link_id}`;
+    const url = `https://pludo.app/doost/my_results?link_id=${link_id}&category=${category}`;
     // Storing response
     fetch(url, {
         headers: { 'Content-Type': 'application/json' }
@@ -18,12 +18,16 @@ async function getapi(link_id) {
 // Calling that async function
 params = window.location.href.split("?")[1].replace("#", "").split("&")
 let link_id;
+let category;
 for (let param of params) {
     if (param.includes("link_id")) {
         link_id = param.replace("link_id=", "")
     }
+    if (param.includes("category")) {
+        category = param.replace("category=", "")
+    }
 }
-getapi(link_id);
+getapi(link_id, category);
 // Calling that async function
   
 // // Function to hide the loader
