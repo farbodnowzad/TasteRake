@@ -26,10 +26,10 @@
     }return r._iq[e]};e.amplitude=r})(window,document);
     
     amplitude.getInstance().init("d25e00fa2a9541fc60f28e527e245f82");
-    amplitude.getInstance().logEvent('visit_my_product_page');
+    amplitude.getInstance().logEvent('visit_index');
 </script>
 <head>
-    <title>10% Off GOOP Featured Items</title>
+    <title>TasteRake: Earn when you share</title>
     <link rel="icon" type="image/x-icon" href="TasteRake_small.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,67 +41,62 @@
 </head>
 
 <body>
-    <a id="banner-link"><img class="banner" src="banner.png"></img></a>
+    <a href="results.html"><img class="banner" src="banner.png"></img></a>
     <div class="container">
+        <div id="phoneNumberModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <br>
+                <div class="modal-logo"><img src="TasteRake_small.png"/></div>
+                <br>
+                <p class="modal-title" id="modal-title">Enter your name and phone number below. We'll send you a text with your unique link.</p>
+                <br>
+                <input type="text" class="modal-input" id="name-input" placeholder="Full Name"/>
+                <br>
+                <input type="number" class="modal-input" id="number-input" placeholder="Phone number" pattern="[0-9]*"/>
+                <br>
+                <input type="submit" id="submit-btn"/>
+                <br>
+            </div>
+        </div>
         <div class="row navigation">
             <div class="col-2" id="nav-wrapper">
-                <a id="nav-home-link" class="nav-home"><span class="nav-btn">Home</span></a><a href="mailto:info@pludo.xyz"><span class="nav-btn">Contact</span></a>
+                <a href="index.html" class="nav-home"><span class="nav-btn">Home</span></a><a href="mailto:info@pludo.xyz"><span class="nav-btn">Contact</span></a>
             </div>
             <div class="col-10"></div>
         </div>
-        <br>
-        <h4 id='page-title-user-name'></h4>
-        <div class="row">
-            <div class="col-2 left-col" onclick="plusSlides(1)"><a class="prev"><div class='button-col'>&#10094;</div></a></div>
-            <div class="col-8 product-container">
-                <br>
-                <div class="slideshow-container" id="slideshow-container"></div>
-                <br>
-                <div class="product-description" id="product-description"></div>
+        <div class="subtitle">
+            <br>
+            <h4>Make money for sharing the products you love</h4>
+            Turn your recommendations into cash. Generate a unique link for this page and share it with your friends or on social media.
+            You'll get a 10% comission whenever someone buys a product through your link and they'll get 10% off.
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-1 col-sm"></div>
+                <div class="col-10 col-sm share-this">
+                    <a><div id="share-this-btn">GET MY LINK</div></a>
+                </div>
+                <div class="col-1 col-sm"></div>
             </div>
-            <div class="col-2 right-col" onclick="plusSlides(1)"><a class="next"><div class='button-col'>&#10095;</div></a></div>
+            <br>
+            <br>
+            <div class="row"  id="product_results">
+            </div>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-1 col-sm"></div>
-            <div class="col-10 col-sm" style='text-align: center;'>
-                <a href="results.html" style="text-decoration: underline;font-family: Georgia, 'Times New Roman', Times, serif;">
-                    Share this product and earn comission
-                </a>
-            </div>
-            <div class="col-1 col-sm"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-1 col-sm"></div>
-            <div class="col-10 col-sm buy">
-                <div id="buy-btn">PURCHASE</div>
-            </div>
-            <div class="col-1 col-sm"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 product-container">
-                <div class="product-details" id="product-details"></div>
-                <br>
-                <a id="view-on-goop">View on goop.com</a>
-            </div>
-            <div class="col-1"></div>
     </div>
     <br>
     <br>
-    </div>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- copyright -->
-        <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
-        © 2021 copyright 
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
-        </div>
-        <!-- copyright -->
-    </footer>
-    <script src="my_product_page.js"></script>
 </body>
-
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- copyright -->
+    <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
+      © 2021 copyright 
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
+    </div>
+    <!-- copyright -->
+  </footer>
+<script src="results.js"></script>
 </html>

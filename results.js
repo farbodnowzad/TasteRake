@@ -1,11 +1,11 @@
-
-// api url
-const api_url = "https://pludo.app/doost/products";
-  
 // Defining async function
-async function getapi(url) {
+async function getapi(category) {
+    var api_url = "https://pludo.app/doost/products";
+    if (category != null) {
+        api_url+=`?category=${category}`
+    }
     // Storing response
-    fetch(url, {
+    fetch(api_url, {
         headers: { 'Content-Type': 'application/json' }
     })
     .then(response => response.json())
@@ -18,7 +18,12 @@ async function getapi(url) {
     // }
 }
 // Calling that async function
-getapi(api_url);
+href_split = window.location.href.split("?category=")
+let category = null;
+if (href_split.length > 1) {
+    category = href_split[1].replace("#", "")
+}
+getapi(category);
   
 // // Function to hide the loader
 // function hideloader() {

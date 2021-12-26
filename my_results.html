@@ -26,7 +26,7 @@
     }return r._iq[e]};e.amplitude=r})(window,document);
     
     amplitude.getInstance().init("d25e00fa2a9541fc60f28e527e245f82");
-    amplitude.getInstance().logEvent('visit_my_product_page');
+    amplitude.getInstance().logEvent('visit_my_results');
 </script>
 <head>
     <title>10% Off GOOP Featured Items</title>
@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <a id="banner-link"><img class="banner" src="banner.png"></img></a>
+    <a href="results.html"><img class="banner" src="banner.png"></img></a>
     <div class="container">
         <div class="row navigation">
             <div class="col-2" id="nav-wrapper">
@@ -49,59 +49,26 @@
             </div>
             <div class="col-10"></div>
         </div>
-        <br>
-        <h4 id='page-title-user-name'></h4>
-        <div class="row">
-            <div class="col-2 left-col" onclick="plusSlides(1)"><a class="prev"><div class='button-col'>&#10094;</div></a></div>
-            <div class="col-8 product-container">
-                <br>
-                <div class="slideshow-container" id="slideshow-container"></div>
-                <br>
-                <div class="product-description" id="product-description"></div>
+        <div class="subtitle">
+            <br>
+            <h4 id='page-title-user-name'></h4>
+            Celebrate the New Year with discounts on all of these featured products. Get 10% off everything! 
+            <br>
+            <div class="row"  id="product_results">
             </div>
-            <div class="col-2 right-col" onclick="plusSlides(1)"><a class="next"><div class='button-col'>&#10095;</div></a></div>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-1 col-sm"></div>
-            <div class="col-10 col-sm" style='text-align: center;'>
-                <a href="results.html" style="text-decoration: underline;font-family: Georgia, 'Times New Roman', Times, serif;">
-                    Share this product and earn comission
-                </a>
-            </div>
-            <div class="col-1 col-sm"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-1 col-sm"></div>
-            <div class="col-10 col-sm buy">
-                <div id="buy-btn">PURCHASE</div>
-            </div>
-            <div class="col-1 col-sm"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 product-container">
-                <div class="product-details" id="product-details"></div>
-                <br>
-                <a id="view-on-goop">View on goop.com</a>
-            </div>
-            <div class="col-1"></div>
     </div>
     <br>
     <br>
-    </div>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- copyright -->
-        <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
-        © 2021 copyright 
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
-        </div>
-        <!-- copyright -->
-    </footer>
-    <script src="my_product_page.js"></script>
 </body>
-
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- copyright -->
+    <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
+      © 2021 copyright 
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
+    </div>
+    <!-- copyright -->
+  </footer>
+<script src="my_results.js"></script>
 </html>
