@@ -95,7 +95,7 @@ function show(data) {
     earnings = (reduced_price * 0.10).toFixed(2)
     earnings = 'US $' + earnings
     
-    product_details = `<span class="product-details-title"><b>Product Details</b><br></span>`
+    product_details = `<span class="product-details-title"><b>PRODUCT DETAILS</b><br></span>`
     product_details_texts = item.product_details
     for (let detail of product_details_texts) {
         product_details += `${detail}<br><br>`;

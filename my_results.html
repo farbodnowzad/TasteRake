@@ -29,7 +29,7 @@
     amplitude.getInstance().logEvent('visit_my_results');
 </script>
 <head>
-    <title>10% Off GOOP Featured Items</title>
+    <title>Enjoy 10% Off to Celebrate 2022</title>
     <link rel="icon" type="image/x-icon" href="TasteRake_small.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,18 +41,28 @@
 </head>
 
 <body>
-    <a href="results.html"><img class="banner" src="banner.png"></img></a>
+    <a href="results.html"><img class="banner" src="banner.svg"></img></a>
     <div class="container">
-        <div class="row navigation">
-            <div class="col-2" id="nav-wrapper">
-                <a id="nav-home-link" class="nav-home"><span class="nav-btn">Home</span></a><a href="mailto:info@pludo.xyz"><span class="nav-btn">Contact</span></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-home"><span class="nav-btn">HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:info@pludo.xyz"><span class="nav-btn">CONTACT</span></a>
+                </li>
+                </ul>
             </div>
-            <div class="col-10"></div>
-        </div>
+        </nav>
         <div class="subtitle">
             <br>
-            <h4 id='page-title-user-name'></h4>
-            Celebrate the New Year with discounts on all of these featured products. Get 10% off everything! 
+            <h4 id='page-title-user-name'>New Year, New Me</h4>
+            The best products for your best self.
             <br>
             <div class="row"  id="product_results">
             </div>
@@ -64,9 +74,10 @@
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- copyright -->
-    <div class="text-center p-4" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">
-      © 2021 copyright 
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;">tasterake.com</a>
+    <div class="text-center p-4" style="background-color: rgba(0,0,0,0.1); color: white; font-family: Mulish;font-weight: 600;">
+      <a href="https://instagram.com/taste.rake"  style="color: white;height: 1%;">Follow us on Instagram</a>
+      <br>
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: white;  ">Copyright 2021</a>
     </div>
     <!-- copyright -->
   </footer>
