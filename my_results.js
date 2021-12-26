@@ -67,5 +67,5 @@ function show(data) {
         document.getElementById("page-title-user-name").innerHTML = page_title;
     }
     document.getElementById("banner-link").href = `my_index.html?link_id=${link_id}`
-    document.getElementById("nav-home-link").href = `my_index.html?link_id=${link_id}`
+    document.getElementsByClassName("nav-home")[0].href = `my_index.html?link_id=${link_id}`
 }
